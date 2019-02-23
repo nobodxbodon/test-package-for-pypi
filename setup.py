@@ -5,7 +5,7 @@ with open("README.md", "r") as 自述文件:
 
 setuptools.setup(
     name="test-package-name",
-    version="0.0.4",
+    version="0.0.7",
     author="小名",
     author_email="author@example.com",
     description="描述",
@@ -18,4 +18,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    entry_points = """
+    [console_scripts]
+    明义 = 包名.解释器:解释器
+    """,
 )
